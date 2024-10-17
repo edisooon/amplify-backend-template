@@ -8,8 +8,7 @@ export const storage = defineStorage({
         allow.entity('identity').to(['read', 'write', 'delete'])
       ],
       'picture-submissions/*': [
-        allow.authenticated.to(['read','write']),
-        allow.guest.to(['read', 'write'])
+        allow.guest.to(['read', 'write', 'delete'])
       ],
     })
   });
