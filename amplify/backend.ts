@@ -16,5 +16,5 @@ cfnUserPool.addPropertyOverride('DeviceConfiguration', {
   DeviceOnlyRememberedOnUserPrompt: false
 });
 
-const { cfnIdentityPool } = backend.auth.resources.cfnResources;
-cfnIdentityPool.allowUnauthenticatedIdentities = false;
+// const { cfnIdentityPool } = backend.auth.resources.cfnResources;
+// cfnIdentityPool.allowUnauthenticatedIdentities = false;
