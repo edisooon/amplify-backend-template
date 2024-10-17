@@ -7,8 +7,6 @@ const backend = defineBackend({
   auth,
   data,
   storage,
-  firstBucket,
-  secondBucket
 });
 
 const { cfnUserPool } = backend.auth.resources.cfnResources;
