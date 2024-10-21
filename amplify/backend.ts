@@ -9,12 +9,12 @@ const backend = defineBackend({
   storage,
 });
 
-const { cfnUserPool } = backend.auth.resources.cfnResources;
+// const { cfnUserPool } = backend.auth.resources.cfnResources;
 
-cfnUserPool.addPropertyOverride('DeviceConfiguration', {
-  ChallengeRequiredOnNewDevice: true,
-  DeviceOnlyRememberedOnUserPrompt: false
-});
+// cfnUserPool.addPropertyOverride('DeviceConfiguration', {
+//   ChallengeRequiredOnNewDevice: true,
+//   DeviceOnlyRememberedOnUserPrompt: false
+// });
 
 // const { cfnIdentityPool } = backend.auth.resources.cfnResources;
 // cfnIdentityPool.allowUnauthenticatedIdentities = false;
