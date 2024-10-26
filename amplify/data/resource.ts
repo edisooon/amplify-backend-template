@@ -15,7 +15,7 @@ const schema = a.schema({
 
   Teacher: a
     .model({
-      year: a.int() 
+      name: a.string() 
     })
     .authorization((allow) => [allow.publicApiKey()])
 });
