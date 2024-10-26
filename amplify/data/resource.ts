@@ -11,6 +11,12 @@ const schema = a.schema({
     .model({
       content: a.string(),
     })
+    .authorization((allow) => [allow.publicApiKey()]),
+
+  Teacher: a
+    .model({
+      year: a.int() 
+    })
     .authorization((allow) => [allow.publicApiKey()])
 });
 
